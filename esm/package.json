@@ -1,0 +1,32 @@
+{
+  "name": "jsr-badges",
+  "description": "Create JSR Badges for use in your JavaScript Registry Projects",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nikeokoronkwo/jsr-badges"
+  },
+  "type": "module",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nikeokoronkwo/jsr-badges/issues"
+  },
+  "main": "./script/bin.js",
+  "module": "./esm/bin.js",
+  "exports": {
+    ".": {
+      "import": "./esm/bin.js",
+      "require": "./script/bin.js"
+    }
+  },
+  "scripts": {
+    "test": "node test_runner.js"
+  },
+  "dependencies": {
+    "@deno/shim-deno": "~0.18.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.9.0",
+    "picocolors": "^1.0.0"
+  },
+  "_generatedBy": "dnt@0.40.0"
+}
